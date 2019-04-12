@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 8000
 
 RUN ["emcc", "hello.c", "-s", "WASM=1", "-o", "hello.html"]
 
